@@ -8,7 +8,8 @@ DeltaZ is a delta-style manipulator inspired by the original work of Raymond Cla
 3. DeltaZ First Movements
 4. Forward and Inverse Kinematics
 5. Interacting with the Environment
-6. Sensing and ACting
+6. Sensing and Acting
+7. Interacting with DeltaZ
 
 If you would like to be part of the DeltaZ community, please feel free to leave comments on the discussion page! I (and others of the DeltaZ community) would be happy to see anyone's modifications or ideas here. If you find bugs with the code or would like to contribute to the the repository, please send a message in the discussion first, and then we can talk about implemnting your ideas. 
 
