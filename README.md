@@ -3,13 +3,12 @@ _Home of the DeltaZ educational robot_
 
 DeltaZ is a delta-style manipulator inspired by the original work of Raymond Clavel. DeltaZ is unique in that it is a low-cost, accessible robot that teahces the ideas of manipulation. There is meant to be low resistance to diving into creating, using, devleoping with DeltaZ. Your DeltaZ journey is laid out in the list below. Each step is linked to take you a page with videos and written instructions. 
 
-1. Items to Purchase
-2. Building the DeltaZ
-3. DeltaZ First Movements
-4. Forward and Inverse Kinematics
-5. Interacting with the Environment
-6. Sensing and Acting
-7. Interacting with DeltaZ
+1. Building the DeltaZ
+2. DeltaZ First Movements
+3. Forward and Inverse Kinematics
+4. Interacting with the Environment
+5. Sensing and Acting
+
 
 If you would like to be part of the DeltaZ community, please feel free to leave comments on the discussion page! I (and others of the DeltaZ community) would be happy to see anyone's modifications or ideas here. If you find bugs with the code or would like to contribute to the the repository, please send a message in the discussion first, and then we can talk about implemnting your ideas. 
 
