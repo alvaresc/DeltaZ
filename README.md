@@ -10,11 +10,10 @@ DeltaZ is a delta-style manipulator inspired by the original work of Raymond Cla
 4. Interacting with the Environment
 5. Sensing and Acting
 
+## Software Setup
 
 ## Building
 Intro about building
-### BOM
-Table with BOM
 
 ## Moving
 
