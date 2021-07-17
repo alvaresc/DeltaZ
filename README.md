@@ -14,5 +14,5 @@ DeltaZ is a delta-style manipulator inspired by the original work of Raymond Cla
 
 If you would like to be part of the DeltaZ GitHub community, please feel free to leave comments on the discussion page! I (and others of the DeltaZ community) would be happy to see anyone's modifications or ideas here. If you find bugs with the code or would like to contribute to the the repository, please send a message in the discussion first, and then we can talk about implemnting your ideas. 
 
-This robot is greared towards middle- and high school-aged students 12-18 years of age. If you don't fall in this age bracket, that is fine! Everyone can get something out of DeltaZ. 
+This robot is greared towards teaching middle- and high school-aged students 12-18 years of age. If you don't fall in this age bracket, that is fine! Everyone can get something out of DeltaZ. 
 
