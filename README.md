@@ -17,3 +17,4 @@ If you would like to be part of the DeltaZ GitHub community, please feel free to
 
 This robot is greared towards teaching middle- and high school-aged students 12-18 years of age. If you don't fall in this age bracket, that is fine! Everyone can get something out of DeltaZ. 
 
+A publication for DeltaZ is coming soon! 
