@@ -1,3 +1,5 @@
+#include <SharpIR.h>
+
 #include "DeltaRobot.h"
 #include <NewPing.h>
 #include <Servo.h>
@@ -7,9 +9,21 @@ bool stringComplete = false;  // whether the string is complete
 Delta myDelta = Delta();
 float distance = 0;
 float height = -35.0;
-int analogVal;
+
+//int analogVal;
+int zVal;
+int xVal;
+int yVal;
+int analogX;
+int analogY;
+int analogZ;
+
+int zPin = A0;
+int xPin = A3;
+int yPin = A4;
 //float height;
-int analogPin = A0;
+//int analogPin = A0;
+//SharpIR IRSensor(SharpIR::GP2Y0A41SK0F, A0);
 
 
 //  trigger echo distance(cm)
@@ -31,11 +45,24 @@ void loop(){
 //  Serial.println(distance);
 //  myDelta.goTo(0,0,height);
 
+//    height = IRSensor.getDistance();
 
-//    analogVal = avg5Analog();
+   
+    analogX = avgAnalogFast(xPin);
+    xVal = map(analogX, 0, 1022, -30, 30);
+    analogY = avgAnalogFast(yPin);
+    yVal = map(analogY, 0, 1022, -30, 30);
+    analogZ = avgAnalogFast(zPin);
+    zVal = map(analogZ, 0, 1022, -75, -35);
+    
 //    height = map(analogVal, 0, 1022, -75, -35);
-//    Serial.println("Height: "+String(height));
-//    myDelta.goTo(0,0,height);
+    
+//    Serial.println("Height: "+String(analogVal));
+//    delay(1000);
+//    delay(1000);
+//    delay(1000);
+    myDelta.goTo(xVal,yVal,zVal);
+//delay(1000);
     
    
 
@@ -123,7 +150,7 @@ float avg5US(){
   return sumReadings/5;
 }
 
-float avg5Analog(){
+float avg5Analog(int analogPin){
   float sumReadings = 0;
   int reading = 0;
   for (int i = 0; i<5; i++){
@@ -133,6 +160,20 @@ float avg5Analog(){
     }
     sumReadings = sumReadings + reading;
     delay(10);
+  }
+  return sumReadings/5;
+}
+
+float avgAnalogFast(int analogPin){
+  float sumReadings = 0;
+  int reading = 0;
+  for (int i = 0; i<5; i++){
+    reading = analogRead(analogPin);
+    if (reading<1){
+      reading = maxReading;
+    }
+    sumReadings = sumReadings + reading;
+//    delay(10);
   }
   return sumReadings/5;
 }
