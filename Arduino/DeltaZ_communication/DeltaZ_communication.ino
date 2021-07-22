@@ -17,6 +17,7 @@ int yVal;
 int analogX;
 int analogY;
 int analogZ;
+int durabilityCount = 0;
 
 int zPin = A0;
 int xPin = A3;
@@ -39,6 +40,25 @@ void setup(){
 }
 
 void loop(){
+//  int durDelay = 200;
+//  myDelta.goTo(0,0,-35);
+//  delay(durDelay);
+//  myDelta.goTo(0,0,-75);
+//  delay(durDelay);
+//  myDelta.goHome();
+//  delay(durDelay);
+//  myDelta.goTo(30,0,-47.06);
+//  delay(durDelay);
+//  myDelta.goTo(0,30,-47.06);
+//  delay(durDelay);
+//  myDelta.goTo(-30,0,-47.06);
+//  delay(durDelay);
+//  myDelta.goTo(0,-30,-47.06);
+//  delay(durDelay);
+//  durabilityCount = durabilityCount+1;
+//  Serial.println("Durability " + String(durabilityCount));
+  
+
 //  distance = avg5US();
 //  height = 2*distance-75.0;
 //  Serial.print("distance: ");
@@ -48,12 +68,12 @@ void loop(){
 //    height = IRSensor.getDistance();
 
    
-    analogX = avgAnalogFast(xPin);
-    xVal = map(analogX, 0, 1022, -30, 30);
-    analogY = avgAnalogFast(yPin);
-    yVal = map(analogY, 0, 1022, -30, 30);
-    analogZ = avgAnalogFast(zPin);
-    zVal = map(analogZ, 0, 1022, -75, -35);
+//    analogX = avgAnalogFast(xPin);
+//    xVal = map(analogX, 0, 1022, -30, 30);
+//    analogY = avgAnalogFast(yPin);
+//    yVal = map(analogY, 0, 1022, -30, 30);
+//    analogZ = avgAnalogFast(zPin);
+//    zVal = map(analogZ, 0, 1022, -75, -35);
     
 //    height = map(analogVal, 0, 1022, -75, -35);
     
@@ -61,7 +81,7 @@ void loop(){
 //    delay(1000);
 //    delay(1000);
 //    delay(1000);
-    myDelta.goTo(xVal,yVal,zVal);
+//    myDelta.goTo(xVal,yVal,zVal);
 //delay(1000);
     
    
