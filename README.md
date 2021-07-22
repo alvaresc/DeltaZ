@@ -4,12 +4,12 @@ _Home of the DeltaZ educational robot_
 <img src="https://github.com/alvaresc/DeltaZ/blob/main/Images/bw_edition.jpg" width="500">
 
 ## About DeltaZ
-DeltaZ is a delta-style manipulator inspired by the original work of Raymond Clavel. DeltaZ is unique in that it is a low-cost, accessible robot that teahces the ideas of manipulation. There is meant to be low resistance to diving into creating, using, devleoping with DeltaZ. Your DeltaZ journey is laid out in the list below. Each step is linked to take you a page with videos and written instructions. 
+DeltaZ is a delta-style manipulator inspired by the original work of Raymond Clavel. DeltaZ is unique in that it is a low-cost, accessible robot that teaches the ideas of manipulation. There is meant to be low resistance to diving into creating, using, devleoping with DeltaZ. Your DeltaZ journey is laid out in the list below. Each step is linked to take you a page with videos and written instructions. 
 
 [Home](https://github.com/alvaresc/DeltaZ/wiki)
 1. [Materials](https://github.com/alvaresc/DeltaZ/wiki/1%29-Materials)
-2. [Software](https://github.com/alvaresc/DeltaZ/wiki/2%29-Software)
-3. [Building](https://github.com/alvaresc/DeltaZ/wiki/3%29-Building)
+2. [Building](https://github.com/alvaresc/DeltaZ/wiki/2%29-Building)
+3. [Software](https://github.com/alvaresc/DeltaZ/wiki/3%29-Software)
 4. [Moving](https://github.com/alvaresc/DeltaZ/wiki/4%29-Moving)
 5. [Manipulation](https://github.com/alvaresc/DeltaZ/wiki/5%29-Manipulation)
 6. [Sensing](https://github.com/alvaresc/DeltaZ/wiki/6%29-Sensing)
