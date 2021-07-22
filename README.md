@@ -9,7 +9,7 @@ DeltaZ is a delta-style manipulator inspired by the original work of Raymond Cla
 [Home](https://github.com/alvaresc/DeltaZ/wiki)
 1. [Materials](https://github.com/alvaresc/DeltaZ/wiki/1%29-Materials)
 2. [Building](https://github.com/alvaresc/DeltaZ/wiki/2%29-Building)
-3. [Software](https://github.com/alvaresc/DeltaZ/wiki/3%29-Software)
+3. [Setup](https://github.com/alvaresc/DeltaZ/wiki/3%29-Setup)
 4. [Moving](https://github.com/alvaresc/DeltaZ/wiki/4%29-Moving)
 5. [Manipulation](https://github.com/alvaresc/DeltaZ/wiki/5%29-Manipulation)
 6. [Sensing](https://github.com/alvaresc/DeltaZ/wiki/6%29-Sensing)
