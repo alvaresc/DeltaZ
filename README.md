@@ -21,7 +21,7 @@ This robot is greared towards teaching middle- and high school-aged students 12-
 
 A publication for DeltaZ is coming soon! 
 
-## About the Creator
+## About the Creators
 <img src="https://github.com/alvaresc/DeltaZ/blob/main/Images/selfie.jpg" width="200">
 
 DeltaZ was created by Sam Alvares thanks to the mentorship and previous work of [Pragna Mannan](https://www.ri.cmu.edu/ri-people/pragna-mannam/), [Dr. Zeynep Temel](https://www.ri.cmu.edu/ri-faculty/zeynep-temel/), and [Dr. Oliver Kroemer](https://www.ri.cmu.edu/ri-faculty/oliver-kroemer/) of Carnegie Mellon University. This work was supported by the [Robotics Institute Summer Scholars](https://riss.ri.cmu.edu/) program at CMU. Sam is a senior mechanical engineering and robotics student at Rose-Hulman Instutue of Technology. His research interests include robot design, kinematics, dynamics and control as well bio-inspired robotics. Sam is a member of the Rose-Hulman men's soccer team, and in his free time, he enjoyes hiking, mountain biking, and playing the ukulele. 
