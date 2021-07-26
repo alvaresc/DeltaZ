@@ -1,7 +1,4 @@
-#include <SharpIR.h>
-
 #include "DeltaRobot.h"
-#include <NewPing.h>
 #include <Servo.h>
 #include <math.h>
 String inputString = "";         // a String to hold incoming data
@@ -11,25 +8,22 @@ float distance = 0;
 float height = -35.0;
 
 //int analogVal;
-int zVal;
-int xVal;
-int yVal;
-int analogX;
-int analogY;
-int analogZ;
-int durabilityCount = 0;
-
-int zPin = A0;
-int xPin = A3;
-int yPin = A4;
-//float height;
 //int analogPin = A0;
-//SharpIR IRSensor(SharpIR::GP2Y0A41SK0F, A0);
+//int zVal;
+//int xVal;
+//int yVal;
+//int analogX;
+//int analogY;
+//int analogZ;
+//int durabilityCount = 0;
+//int zPin = A0;
+//int xPin = A3;
+//int yPin = A4;
 
 
 //  trigger echo distance(cm)
-int maxReading = 20;
-NewPing sonar(7,6,maxReading);
+//int maxReading = 20;
+//NewPing sonar(7,6,maxReading);
 
 void setup(){
   Serial.begin(9600);
@@ -156,47 +150,47 @@ void goCircle(int r,float z){
   myDelta.goHome();
 }
 
-float avg5US(){
-  float sumReadings = 0;
-  int reading = 0;
-  for (int i = 0; i<5; i++){
-    reading = sonar.ping_cm();
-    if (reading<1){
-      reading = maxReading;
-    }
-    sumReadings = sumReadings + reading;
-    delay(10);
-  }
-  return sumReadings/5;
-}
-
-float avg5Analog(int analogPin){
-  float sumReadings = 0;
-  int reading = 0;
-  for (int i = 0; i<5; i++){
-    reading = analogRead(analogPin);
-    if (reading<1){
-      reading = maxReading;
-    }
-    sumReadings = sumReadings + reading;
-    delay(10);
-  }
-  return sumReadings/5;
-}
-
-float avgAnalogFast(int analogPin){
-  float sumReadings = 0;
-  int reading = 0;
-  for (int i = 0; i<5; i++){
-    reading = analogRead(analogPin);
-    if (reading<1){
-      reading = maxReading;
-    }
-    sumReadings = sumReadings + reading;
+//float avg5US(){
+//  float sumReadings = 0;
+//  int reading = 0;
+//  for (int i = 0; i<5; i++){
+//    reading = sonar.ping_cm();
+//    if (reading<1){
+//      reading = maxReading;
+//    }
+//    sumReadings = sumReadings + reading;
 //    delay(10);
-  }
-  return sumReadings/5;
-}
+//  }
+//  return sumReadings/5;
+//}
+
+//float avg5Analog(int analogPin){
+//  float sumReadings = 0;
+//  int reading = 0;
+//  for (int i = 0; i<5; i++){
+//    reading = analogRead(analogPin);
+//    if (reading<1){
+//      reading = maxReading;
+//    }
+//    sumReadings = sumReadings + reading;
+//    delay(10);
+//  }
+//  return sumReadings/5;
+//}
+
+//float avgAnalogFast(int analogPin){
+//  float sumReadings = 0;
+//  int reading = 0;
+//  for (int i = 0; i<5; i++){
+//    reading = analogRead(analogPin);
+//    if (reading<1){
+//      reading = maxReading;
+//    }
+//    sumReadings = sumReadings + reading;
+////    delay(10);
+//  }
+//  return sumReadings/5;
+//}
 
 void SF1(){
 //  ADD YOUR OWN COOL FUNCTION :)
