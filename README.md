@@ -1,7 +1,7 @@
 # DeltaZ
 _Home of the DeltaZ educational robot_
 
-<img src="https://github.com/alvaresc/DeltaZ/blob/main/Images/bw_edition.jpg" width="500">
+<img src="https://github.com/alvaresc/DeltaZ/blob/main/Images/final_design.png" width="500">
 
 ## About DeltaZ
 DeltaZ is a delta-style manipulator inspired by the original work of Raymond Clavel. DeltaZ is unique in that it is a low-cost, accessible robot that teaches the ideas of manipulation. There is meant to be low resistance to diving into creating, using, devleoping with DeltaZ. Your DeltaZ journey is laid out in the list below. Each step is linked to take you a page with videos and written instructions. 
