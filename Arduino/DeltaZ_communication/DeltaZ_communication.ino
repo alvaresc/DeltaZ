@@ -144,11 +144,33 @@ void SF1() {
 void SF2() {
   //  ADD YOUR OWN COOL FUNCTION :)
   Serial.println("SF2");
+  int timeForDelay = 500;
+  myDelta.goHome();
+  delay(timeForDelay);
+  myDelta.goTo(0,0,-35);
+  delay(timeForDelay);
+  myDelta.goTo(0,0,-75);
+  delay(timeForDelay);
+  myDelta.goHome();
+  delay(timeForDelay);
+  myDelta.goTo(30,0,-47.06);
+  delay(timeForDelay);
+  myDelta.goTo(-30,0,-47.06);
+  delay(timeForDelay);
+  myDelta.goHome();
+  delay(timeForDelay);
+  myDelta.goTo(0,30,-47.06);
+  delay(timeForDelay);
+  myDelta.goTo(0,-30,-47.06);
+  delay(timeForDelay);
+  myDelta.goHome();
 }
 
 void SF3() {
   //  ADD YOUR OWN COOL FUNCTION :)
   Serial.println("SF3");
+  goCircle(30,-50);
+  SF2();
 }
 
 void SF4() {
@@ -159,11 +181,13 @@ void SF4() {
 void goCircle(int r, float z) {
   float x;
   float y;
-  for (int i = 0; i < 360; i = i + 2) {
+  float zReal;
+  for (int i = 0; i < 360; i = i + 6) {
     x = r * cos(i * 3.14159 / 180);
     y = r * sin(i * 3.14159 / 180);
+    zReal = map(i,0,359,-35,-75);
     myDelta.reportPosition();
-    myDelta.goTo(x, y, z);
+    myDelta.goTo(x, y, zReal);
     delay(1);
   }
   myDelta.goHome();
