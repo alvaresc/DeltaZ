@@ -144,26 +144,28 @@ void SF1() {
 void SF2() {
   //  ADD YOUR OWN COOL FUNCTION :)
   Serial.println("SF2");
-  int timeForDelay = 500;
+  int timeForDelay = 100;
+  int shortPoints = 50;
+  int longPoints = 100;
   myDelta.goHome();
   delay(timeForDelay);
-  myDelta.goTo(0,0,-35);
+  moveLine(0,0,-47,0,0,-35,shortPoints);
   delay(timeForDelay);
-  myDelta.goTo(0,0,-75);
+  moveLine(0,0,-35,0,0,-75,longPoints);
   delay(timeForDelay);
-  myDelta.goHome();
+  moveLine(0,0,-75,0,0,-47,shortPoints);
   delay(timeForDelay);
-  myDelta.goTo(30,0,-47.06);
+  moveLine(0,0,-47,30,0,-47,shortPoints);
   delay(timeForDelay);
-  myDelta.goTo(-30,0,-47.06);
+  moveLine(30,0,-47,-30,0,-47,longPoints);
   delay(timeForDelay);
-  myDelta.goHome();
+  moveLine(-30,0,-47,0,0,-47,shortPoints);
   delay(timeForDelay);
-  myDelta.goTo(0,30,-47.06);
+  moveLine(0,0,-47,0,30,-47,shortPoints);
   delay(timeForDelay);
-  myDelta.goTo(0,-30,-47.06);
+  moveLine(0,30,-47, 0,-30,-47,longPoints);
   delay(timeForDelay);
-  myDelta.goHome();
+  moveLine(0,-30,-47,0,0,-47,shortPoints);
 }
 
 void SF3() {
@@ -191,6 +193,20 @@ void goCircle(int r, float z) {
     delay(1);
   }
   myDelta.goHome();
+}
+
+void moveLine(int p1x, int p1y, int p1z, int p2x, int p2y, int p2z, int numPoints){
+  int xCurrent;
+  int yCurrent;
+  int zCurrent; 
+  
+  for(int i = 0; i < numPoints; i++){
+    xCurrent = map(i,0,numPoints,p1x,p2x);
+    yCurrent = map(i,0,numPoints,p1y,p2y);
+    zCurrent = map(i,0,numPoints,p1z,p2z);
+    myDelta.goTo(xCurrent, yCurrent, zCurrent);
+    delay(10);
+  }
 }
 
 //float avg5US(){
