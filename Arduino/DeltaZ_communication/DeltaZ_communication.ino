@@ -8,7 +8,9 @@ float height;
 
 // Uncomment below for general analog input
 int analogVal;
+float avgAnalogVal;
 int analogPin = A0;
+
 // Uncomment below for joystick analog input
 //int zVal;
 //int xVal;
@@ -36,8 +38,10 @@ void setup() {
 
 void loop() {
 // Uncomment below for general analog input
-//  height = map(analogVal, 0, 1022, -75, -35);
-//  Serial.println("Height: "+String(analogVal));
+  avgAnalogVal = avg5Analog(analogPin);
+  height = map(avgAnalogVal, 0, 1022, -75, -35);
+  Serial.println("Height: "+String(height));
+  myDelta.goTo(0, 0, height);
 
 
 // Uncomment below for joystick analog input
