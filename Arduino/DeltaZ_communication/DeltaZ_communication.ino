@@ -43,7 +43,6 @@ void loop() {
   Serial.println("Height: "+String(height));
   myDelta.goTo(0, 0, height);
 
-
 // Uncomment below for joystick analog input
 //  analogX = avgAnalogFast(xPin);
 //  xVal = map(analogX, 0, 1022, -30, 30);
