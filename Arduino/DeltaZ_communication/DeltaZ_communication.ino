@@ -7,20 +7,20 @@ Delta myDelta = Delta();
 float height;
 
 // Uncomment below for general analog input
-int analogVal;
-float avgAnalogVal;
-int analogPin = A0;
+//int analogVal;
+//float avgAnalogVal;
+//int analogPin = A0;
 
 // Uncomment below for joystick analog input
-//int zVal;
-//int xVal;
-//int yVal;
-//int analogX;
-//int analogY;
-//int analogZ;
-//int zPin = A0;
-//int xPin = A3;
-//int yPin = A4;
+int zVal = -47.06;
+int xVal;
+int yVal;
+int analogX;
+int analogY;
+int analogZ;
+int zPin = A2;
+int xPin = A1;
+int yPin = A0;
 
 //Uncomment below for ultrasonic sensor input
 //int maxReading = 20;
@@ -38,19 +38,19 @@ void setup() {
 
 void loop() {
 // Uncomment below for general analog input
-  avgAnalogVal = avg5Analog(analogPin);
-  height = map(avgAnalogVal, 0, 1022, -75, -35);
-  Serial.println("Height: "+String(height));
-  myDelta.goTo(0, 0, height);
+//  avgAnalogVal = avg5Analog(analogPin);
+//  height = map(avgAnalogVal, 0, 1022, -75, -35);
+//  Serial.println("Height: "+String(height));
+//  myDelta.goTo(0, 0, height);
 
 // Uncomment below for joystick analog input
-//  analogX = avgAnalogFast(xPin);
-//  xVal = map(analogX, 0, 1022, -30, 30);
-//  analogY = avgAnalogFast(yPin);
-//  yVal = map(analogY, 0, 1022, -30, 30);
-//  analogZ = avgAnalogFast(zPin);
-//  zVal = map(analogZ, 0, 1022, -75, -35);
-//  myDelta.goTo(xVal,yVal,zVal);
+  analogX = avgAnalogFast(xPin);
+  xVal = map(analogX, 0, 1022, -21, 21);
+  analogY = avgAnalogFast(yPin);
+  yVal = map(analogY, 0, 1022, -21, 21);
+//  analogZ = avgAnalogFast(zPin);  // only uncomment this line if using potnetiometer with joystick
+//  zVal = map(analogZ, 0, 1022, -75, -35); // only uncomment this line if using potnetiometer with joystick
+  myDelta.goTo(xVal,yVal,zVal);
 
 //  Uncomment for Ultrasonic Sensor
 //  distance = avg5US();
@@ -190,19 +190,15 @@ float avg5Analog(int analogPin){
 //}
 
 // Uncomment below for joystick
-//float avgAnalogFast(int analogPin){
-//  float sumReadings = 0;
-//  int reading = 0;
-//  for (int i = 0; i<5; i++){
-//    reading = analogRead(analogPin);
-//    if (reading<1){
-//      reading = maxReading;
-//    }
-//    sumReadings = sumReadings + reading;
-////    delay(10);
-//  }
-//  return sumReadings/5;
-//}
+float avgAnalogFast(int analogPin){
+  float sumReadings = 0;
+  int reading = 0;
+  for (int i = 0; i<5; i++){
+    reading = analogRead(analogPin);
+    sumReadings = sumReadings + reading;
+  }
+  return sumReadings/5;
+}
 
 
 void serialEvent() {
