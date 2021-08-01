@@ -48,8 +48,8 @@ void loop() {
   xVal = map(analogX, 0, 1022, -21, 21);
   analogY = avgAnalogFast(yPin);
   yVal = map(analogY, 0, 1022, -21, 21);
-//  analogZ = avgAnalogFast(zPin);  // only uncomment this line if using potnetiometer with joystick
-//  zVal = map(analogZ, 0, 1022, -75, -35); // only uncomment this line if using potnetiometer with joystick
+  analogZ = avgAnalogFast(zPin);  // only uncomment this line if using potnetiometer with joystick
+  zVal = map(analogZ, 0, 1022, -75, -35); // only uncomment this line if using potnetiometer with joystick
   myDelta.goTo(xVal,yVal,zVal);
 
 //  Uncomment for Ultrasonic Sensor
@@ -189,7 +189,7 @@ float avg5Analog(int analogPin){
 //  return sumReadings/5;
 //}
 
-// Uncomment below for joystick
+// Uncomment below for fast analog read
 float avgAnalogFast(int analogPin){
   float sumReadings = 0;
   int reading = 0;
