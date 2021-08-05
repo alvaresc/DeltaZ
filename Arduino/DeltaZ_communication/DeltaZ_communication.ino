@@ -12,15 +12,15 @@ float height;
 //int analogPin = A0;
 
 // Uncomment below for joystick analog input
-int zVal = -47.06;
-int xVal;
-int yVal;
-int analogX;
-int analogY;
-int analogZ;
-int zPin = A2;
-int xPin = A1;
-int yPin = A0;
+//int zVal = -47.06;
+//int xVal;
+//int yVal;
+//int analogX;
+//int analogY;
+//int analogZ;
+//int zPin = A2;
+//int xPin = A1;
+//int yPin = A0;
 
 //Uncomment below for ultrasonic sensor input
 //int maxReading = 20;
@@ -163,16 +163,16 @@ void moveLine(int p1x, int p1y, int p1z, int p2x, int p2y, int p2z, int numPoint
 }
 
 // Uncomment below for general analog input
-float avg5Analog(int analogPin){
-  float sumReadings = 0;
-  int reading = 0;
-  for (int i = 0; i<5; i++){
-    reading = analogRead(analogPin);
-    sumReadings = sumReadings + reading;
-    delay(10);
-  }
-  return sumReadings/5;
-}
+//float avg5Analog(int analogPin){
+//  float sumReadings = 0;
+//  int reading = 0;
+//  for (int i = 0; i<5; i++){
+//    reading = analogRead(analogPin);
+//    sumReadings = sumReadings + reading;
+//    delay(10);
+//  }
+//  return sumReadings/5;
+//}
 
 // Uncomment Below for ultrasonic sensor
 //float avg5US(){
@@ -190,15 +190,15 @@ float avg5Analog(int analogPin){
 //}
 
 // Uncomment below for fast analog read
-float avgAnalogFast(int analogPin){
-  float sumReadings = 0;
-  int reading = 0;
-  for (int i = 0; i<5; i++){
-    reading = analogRead(analogPin);
-    sumReadings = sumReadings + reading;
-  }
-  return sumReadings/5;
-}
+//float avgAnalogFast(int analogPin){
+//  float sumReadings = 0;
+//  int reading = 0;
+//  for (int i = 0; i<5; i++){
+//    reading = analogRead(analogPin);
+//    sumReadings = sumReadings + reading;
+//  }
+//  return sumReadings/5;
+//}
 
 
 void serialEvent() {
