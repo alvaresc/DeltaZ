@@ -14,10 +14,11 @@ DeltaZ is a delta-style manipulator inspired by the original work of Raymond Cla
 5. [Manipulation](https://github.com/alvaresc/DeltaZ/wiki/5%29-Manipulation)
 6. [Sensing](https://github.com/alvaresc/DeltaZ/wiki/6%29-Sensing)
 
-
-If you would like to be part of the DeltaZ GitHub community, please feel free to leave comments on the discussion page! I (and others of the DeltaZ community) would be happy to see anyone's modifications or ideas here. If you find bugs with the code or would like to contribute to the the repository, please send a message in the discussion first, and then we can talk about implemnting your ideas. 
+DeltaZ is a unique educational robot. It stays stationary on your desk (it stands about 16 cm tall), and it manipulates and senses the surrounding environment. 
 
 This robot is greared towards teaching middle- and high school-aged students 12-18 years of age. If you don't fall in this age bracket, that is fine! Everyone can get something out of DeltaZ. 
+
+If you would like to be part of the DeltaZ GitHub community, please feel free to leave comments on the discussion page! I (and others of the DeltaZ community) would be happy to see anyone's modifications or ideas here. If you find bugs with the code or would like to contribute to the the repository, please send a message in the discussion first, and then we can talk about implemnting your ideas. 
 
 A publication for DeltaZ is coming soon! 
 
