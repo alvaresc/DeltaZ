@@ -24,9 +24,12 @@ If you would like to be part of the DeltaZ GitHub community, please feel free to
 A publication for DeltaZ is coming soon! 
 
 ## About the Creators
-<img src="https://github.com/alvaresc/DeltaZ/blob/main/Images/selfie.jpg" width="200">
 
-DeltaZ was created by Sam Alvares thanks to the mentorship and previous work of [Pragna Mannan](https://www.ri.cmu.edu/ri-people/pragna-mannam/), [Dr. Zeynep Temel](https://www.ri.cmu.edu/ri-faculty/zeynep-temel/), and [Dr. Oliver Kroemer](https://www.ri.cmu.edu/ri-faculty/oliver-kroemer/) of Carnegie Mellon University. This work was supported by the [Robotics Institute Summer Scholars](https://riss.ri.cmu.edu/) program at CMU. Sam is a senior mechanical engineering and robotics student at Rose-Hulman Instutue of Technology. His research interests include robot design, kinematics, dynamics and control as well bio-inspired robotics. Sam is a member of the Rose-Hulman men's soccer team, and in his free time, he enjoyes hiking, mountain biking, and playing the ukulele. 
+| <img src="https://github.com/alvaresc/DeltaZ/blob/main/Images/selfie_resized.jpg" width="150"> | <img src="https://github.com/alvaresc/DeltaZ/blob/main/Images/mannam_pragna_2019_resized.jpg" width="150"> | ><img src="https://github.com/alvaresc/DeltaZ/blob/main/Images/kroemer_oliver.jpg" width="150"> | <img src="https://github.com/alvaresc/DeltaZ/blob/main/Images/temel_zeynep_resized.jpg" width="150"> |
+| :---: | :---: | :---: | :---: |
+| Sam Alvares | pragna Mannam |Dr. oliver Kromer| Dr. Zeynep temel
+
+DeltaZ was created by [Sam Alvares](https://www.linkedin.com/in/sam-alvares-178314172/), [Pragna Mannan](https://www.ri.cmu.edu/ri-people/pragna-mannam/), [Dr. Oliver Kroemer](https://www.ri.cmu.edu/ri-faculty/oliver-kroemer/), and [Dr. Zeynep Temel](https://www.ri.cmu.edu/ri-faculty/zeynep-temel/). This work was supported by the [Robotics Institute Summer Scholars](https://riss.ri.cmu.edu/) program at CMU. Sam is a senior mechanical engineering and robotics student at Rose-Hulman Instutue of Technology. His research interests include robot design, kinematics, dynamics and control as well bio-inspired robotics. Sam is a member of the Rose-Hulman men's soccer team, and in his free time, he enjoyes hiking, mountain biking, and playing the ukulele. Pragna Mannnam is a Ph.D. student at Carnegie Mellon University (CMU). Oliver Kroemer is an assistant professor at CMU and the head of the [Intelligent Autonomous Manipulation Lab](https://labs.ri.cmu.edu/iam/). Zeynep Temel is an assistant professor at CMU and the head of the [Zoom Lab](https://www.ri.cmu.edu/robotics-groups/zoom-lab/).
 
 If you have questions, comments or concerns about DeltaZ, or if you would like to acquire a set of DetlaZ robots, please feel free to reach out to Sam via email at alvaresc@rose-hulman.edu. Also, feel free to leave a message in the discussion page. 
 
